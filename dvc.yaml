@@ -9,3 +9,12 @@ stages:
 
     outs:
       - data/processed.csv
+
+  model:
+    cmd: python src/model.py
+
+    deps:
+      - data/processed.csv
+      
+    outs:
+      - data/model.pkl

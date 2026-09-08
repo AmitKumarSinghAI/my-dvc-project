@@ -16,3 +16,15 @@ stages:
       hash: md5
       md5: 0fa6e6e63b2d5cb3c709fc7b03987e47
       size: 94
+  model:
+    cmd: python src/model.py
+    deps:
+    - path: data/processed.csv
+      hash: md5
+      md5: 0fa6e6e63b2d5cb3c709fc7b03987e47
+      size: 94
+    outs:
+    - path: data/model.pkl
+      hash: md5
+      md5: aad99f70dc03265b7451577e0af1f0a6
+      size: 483
